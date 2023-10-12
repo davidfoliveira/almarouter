@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "config": "^3.3.9"
+  },
+  "devDependencies": {
+    "mqtt": "^5.1.2"
   }
 }

@@ -1,0 +1,21 @@
+{
+  "server": {
+    "proto": "udp",
+    "port": 9000
+  },
+  "backends": {
+    "backend-one": {
+      "proto": "mqtt",
+      "url": "127.0.0.1",
+      "topic": "/test/mqtt"
+    }
+  },
+  "backendSelector": [
+    {
+      "target": "backend-one",
+      "rxMatches": "^{.*}$",
+      "parser": "json",
+      "bodyMatches": { "type": "meh" }
+    }
+  ]
+}

@@ -55,7 +55,13 @@ function findBackend(msg) {
 
     // Parsed message matching options
     if (typeof rule.bodyMatches === 'object' && isObject(parsedMsg)) {
-      if (!objectMatches(parsedMsg, rule.bodyMatches)) continue;
+      try {
+        if (!objectMatches(parsedMsg, rule.bodyMatches)) continue;
+      }
+      catch(ex) {
+        console.log(`ERROR: Error testing object matching against '${msg}': ${ex}. Ignoring rule.`);
+        continue;
+      }
     }
 
     return BACKENDS[rule.target];
@@ -69,7 +75,7 @@ server = new ServerClass(config.server || {});
 server.listen(async (msg) => {
   const be = findBackend(msg);
   if (!be) {
-    console.warn(`WARN: Could not find an appropriate backend for message: ${msg}`);
+    console.warn(`WARN: Could not find an appropriate backend for message: '${msg}'. Ignoring it!`);
     return;
   }
 
