@@ -1,6 +1,6 @@
 {
   "name": "almarouter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Application Layer Message Asynchronous Router supporting routing configurations",
   "bin": {
     "almarouter": "bin/almarouter.js"
