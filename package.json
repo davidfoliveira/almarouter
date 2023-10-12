@@ -1,13 +1,12 @@
 {
-  "name": "mrouter",
+  "name": "almarouter",
   "version": "1.0.0",
-  "description": "TCP/UDP message router based on routing configurations",
+  "description": "Application Layer Message Asynchronous Router supporting routing configurations",
   "bin": {
-    "mrouter": "bin/mrouter.js"
+    "almarouter": "bin/almarouter.js"
   },
   "scripts": {
-    "start": "node bin/mrouter.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bin/almarouter.js"
   },
   "author": "David Oliveira <d dot oliveira at prozone dot org>",
   "license": "ISC",

@@ -1,10 +1,10 @@
-# node-mrouter - A Node.js powered multi-backend message router
+# node-almarouter - A Node.js powered Application Layer Message Asynchronous Router
 
 ## Installing it
-	$ npm i -g mrouter
+	$ npm i -g almarouter
 
 ## Running it
-	$ mrouter --config=/path/for/config/file.json
+	$ almarouter --config=/path/for/config/file.json
 
 ## Configuration
 
