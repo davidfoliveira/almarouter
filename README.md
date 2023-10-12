@@ -1,7 +1,7 @@
-# node-message-router - A Node.js powered multi-backend message router
+# node-mrouter - A Node.js powered multi-backend message router
 
 ## Installing it
-	$ npm i -g message-router
+	$ npm i -g mrouter
 
 ## Running it
 	$ mrouter --config=/path/for/config/file.json
