@@ -1,5 +1,5 @@
 {
-  "name": "message-router",
+  "name": "mrouter",
   "version": "1.0.0",
   "description": "TCP/UDP message router based on routing configurations",
   "bin": {
