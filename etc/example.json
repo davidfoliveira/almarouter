@@ -1,0 +1,21 @@
+{
+  "server": {
+    "proto": "udp",
+    "port": 9000
+  },
+  "backends": {
+    "backend-one": {
+      "proto": "tcp",
+      "host": "some.host.here",
+      "port": 1234
+    }
+  },
+  "backendSelector": [
+    {
+      "target": "backend-one",
+      "rxMatches": "^{.*}$",
+      "parser": "json",
+      "bodyMatches": { "type": "meh" }
+    }
+  ]
+}

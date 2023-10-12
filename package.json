@@ -1,0 +1,17 @@
+{
+  "name": "message-router",
+  "version": "1.0.0",
+  "description": "TCP/UDP message router based on routing configurations",
+  "bin": {
+    "mrouter": "bin/mrouter.js"
+  },
+  "scripts": {
+    "start": "node bin/mrouter.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Oliveira <d dot oliveira at prozone dot org>",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.9"
+  }
+}
