@@ -10,27 +10,27 @@
 
 ### Minimum configuration
 
-{
-  "server": {
-    "proto": "tcp|udp"
-  },
-  "backends": {
-    "backend-one": {
-      "proto": "tcp|udp",
-      "host": "some.host.here",
-      "port": 1234
-    }
-  },
-  "backendSelector": [
-    {
-      ...rules here...
-      "rxMatches": "^{.*}$",
-      "parser": "json",
-      "bodyMatches": { "type": "meh" },
-      "target": "backend-one",
-    }
-  ]
-}
+	{
+	  "server": {
+	    "proto": "tcp|udp"
+	  },
+	  "backends": {
+	    "backend-one": {
+	      "proto": "tcp|udp",
+	      "host": "some.host.here",
+	      "port": 1234
+	    }
+	  },
+	  "backendSelector": [
+	    {
+	      ...rules here...
+	      "rxMatches": "^{.*}$",
+	      "parser": "json",
+	      "bodyMatches": { "type": "meh" },
+	      "target": "backend-one",
+	    }
+	  ]
+	}
 
 
 ### Supported selector rules
