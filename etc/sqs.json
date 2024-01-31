@@ -1,0 +1,23 @@
+{
+  "server": {
+    "proto": "udp",
+    "port": 9000
+  },
+  "backends": {
+    "backend-one": {
+      "proto": "sqs",
+      "queueURL": "https://sqs.us-east-1.amazonaws.com/140341670282/trainiac-booking-events-dev.fifo",
+      "batchSendInterval": 1000,
+      "retries": 5,
+      "publishOpts": {
+        "MessageGroupId": "sms"
+      }
+    }
+  },
+  "backendSelector": [
+    {
+      "target": "backend-one",
+      "rxMatches": "^.*$"
+    }
+  ]
+}

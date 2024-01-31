@@ -59,7 +59,7 @@ function findBackend(msg) {
         if (!objectMatches(parsedMsg, rule.bodyMatches)) continue;
       }
       catch(ex) {
-        console.log(`ERROR: Error testing object matching against '${msg}': ${ex}. Ignoring rule.`);
+        console.error(`ERRO: Error testing object matching against '${msg}': ${ex}. Ignoring rule.`);
         continue;
       }
     }

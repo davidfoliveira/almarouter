@@ -6,7 +6,7 @@
   "backends": {
     "backend-one": {
       "proto": "mqtt",
-      "url": "127.0.0.1",
+      "url": "mqtt://127.0.0.1",
       "topic": "/test/mqtt"
     }
   },
