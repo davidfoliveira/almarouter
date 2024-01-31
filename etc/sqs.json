@@ -6,7 +6,7 @@
   "backends": {
     "backend-one": {
       "proto": "sqs",
-      "queueURL": "https://sqs.us-east-1.amazonaws.com/140341670282/trainiac-booking-events-dev.fifo",
+      "queueURL": "https://sqs.us-east-1.amazonaws.com/1231231231/booking-events-dev.fifo",
       "batchSendInterval": 1000,
       "retries": 5,
       "publishOpts": {
