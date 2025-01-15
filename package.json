@@ -1,12 +1,13 @@
 {
   "name": "almarouter",
-  "version": "1.2.5",
+  "version": "1.3.0",
   "description": "Application Layer Message Asynchronous Router supporting routing configurations",
   "bin": {
     "almarouter": "bin/almarouter.js"
   },
   "scripts": {
-    "start": "node bin/almarouter.js"
+    "start": "node bin/almarouter.js",
+    "test": "jest test/"
   },
   "author": "David Oliveira <d dot oliveira at prozone dot org>",
   "license": "ISC",
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "@aws-sdk/client-sqs": "^3.502.0",
+    "jest": "^29.7.0",
     "mqtt": "^5.3.5",
     "uuid": "^9.0.1"
   }
